@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="bg-black">
+
+
+
+    <!--? nav side   -->
+
+    <div
+      class="nav-meals bg-black d-flex justify-content-between position-fixed top-0 min-vh-100 z-3"
+    >
+      <div
+        class="nav-tap bg-black min-vh-100 p-4 d-flex flex-column justify-content-between"
+      >
+        <div class="links overflow-hidden">
+          <ul class="list-unstyled">
+            <li class="py-2 search"><a href="#search-section">Search</a></li>
+            <li class="py-2 cato"><a href="#Categories">Categories</a></li>
+            <li class="py-2 area"><a href="#Area">Area</a></li>
+            <li class="py-2 ingr"><a href="#Ingredients">Ingredients</a></li>
+            <li class="py-2 contact"><a href="#Contact-Us">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="social text-white">
+          <i class="fa fa-brands fa-facebook"></i>
+          <i class="fa fa-brands fa-twitter"></i>
+          <i class="fa-solid fa-globe"></i>
+          <p>Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+
+      <div
+        class="nav-header bg-white d-flex flex-column justify-content-between align-items-center px-2 py-4"
+      >
+        <img src="./images/logo.png" alt="logo-yammy" />
+        <i class="fa-solid close-icon fa-2x fa-x d-none"></i>
+        <i class="fa-solid open-icon fa-bars fa-2x"></i>
+        <div>
+          <i class="fa-solid fa-globe d-block"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+    <!--! Loader spinner until page loading  -->
+    
+    <div class="bg-my-loader my-loader position-fixed w-100 vh-100 d-flex justify-content-center align-items-center z-2">
+      <span class="loader"></span>
+    </div>
+
+
+    <!-- * main meals section -->
+
+    <section
+    class="home-screen-meals text-white py-5"
+    id="home-screen-meals"
+    >
+    
+      <div class="container w-75" id="search-container"></div>
+      <div class=" d-none bg-black my-loader-search position-fixed w-100 vh-100 d-flex justify-content-center align-items-center z-2">
+        <span class="loader"></span>
+      </div>
+      <div class="container">
+        <div class="row" id="row-data"></div>
+      </div>
+    </section>
+
+   
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+/* TODO beginf of nav-bar side  */
+a,
+ul {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+.nav-header img {
+  width: 50px;
+}
+.nav-meals i,
+.area-box,
+.ingredients-box {
+  cursor: pointer;
+}
+.nav-meals {
+  width: 300px;
+  left: -234px;
+}
+.nav-meals .links li {
+  position: relative;
+  top: 300px;
+  transition: 0.5s;
+}
+/* TODO ending of nav-bar side  */
+
+/* ************************beginf of figure****************************************************** */
+figure figcaption {
+  position: absolute;
+  background-color: rgba(var(--bs-secondary-bg-rgb), 0.5);
+  top: 100%;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+figure:hover figcaption {
+  top: 0;
+}
+figure figcaption {
+  position: absolute;
+  background-color: rgba(var(--bs-secondary-bg-rgb), 0.8);
+  top: 100%;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.4s;
+  cursor: pointer;
+}
+/* ********************endign of figure ****************************** */
+/* ! beginf of search inputs fields  */
+.search-meal .form-control {
+    background-color: transparent;
+    color: white;
+}
+.search-meal .form-control::placeholder {
+    color: rgba(238, 255, 238, 0.452);
+}
+
+/* !endign of search inputs fields  */
+
+/** beginf of  loading spinner */
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-left: 4px solid #ff3d00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.bg-my-loader {
+  --bs-bg-opacity: 1;
+  background-color: #16181a;
+}
+/** ending of  loading spinner */
